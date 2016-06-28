@@ -1,0 +1,76 @@
+
+  nick_names =[
+  { name: "Chris Paul",
+    nickname: "CP3" },
+   {name: "Matt Boner",
+    nickname:"Red Rocket"},
+   { name: "Paul George",
+    nickname: "PG13" },
+   {name: "Kyrie Irving",
+    nickname: "Uncle Drew"},
+    {name: "DeMarcus Cousins",
+    nickname: "Boogie"},
+     {name: "Nick Young",
+    nickname: "Swaggy P"},
+    {name: "Anthony Davis",
+   nickname: "The Brow"},
+   {name: "Doug McDermott",
+  nickname: "Dougie McBuckets" },
+  {name: "Kenneth Faried",
+  nickname: "Manimal"},
+  {name: "Robin Lopez",
+  nickname: "Sideshow Bob"}
+  ]
+
+  def name_caller(array, input)
+    array.each do |element|
+      case input
+      when element[:name]
+      puts "#{element[:name]} nickname is #{element[:nickname]}"
+    # else
+    #   puts "Player not in database! Please try another player"
+      end
+    end
+
+  end
+puts "Welcome to the NBA player nickname generator!"
+puts "Choose from one of the following players: Chris Paul, Matt Boner, Paul George, Kyrie Irving, DeMarcus Cousins, Nick Young, Anthony Davis, Doug McDermott, Kenneth Faried, Robin Lopez."
+puts "Directions: Type in a players first and last name:"
+
+user_input = gets.rstrip.chomp #downcase so capitals dont matter
+
+name_caller(nick_names, user_input)
+
+
+
+# case user_input
+# when nick_names[:name1]
+#   puts "#{nick_names[:name1]}'s nickname is #{nick_names[:nickname1]}"
+# when "matt boner"
+#   puts "#{nick_names[:name2]}'s nickname is #{nick_names[:nickname2]}"
+# when "paul george"
+#   puts "#{nick_names[:name3]}'s nickname is #{nick_names[:nickname3]}"
+# when "kyrie irving"
+#   puts "#{nick_names[:name4]}'s nickname is #{nick_names[:nickname4]}"
+# when "demarcus cousins"
+#   puts "#{nick_names[:name5]}'s nickname is #{nick_names[:nickname5]}"
+# when "nick young"
+#   puts "#{nick_names[:name6]}'s nickname is #{nick_names[:nickname6]}"
+# when "anthony davis"
+#   puts "#{nick_names[:name7]}'s nickname is #{nick_names[:nickname7]}"
+# when "doug mcdermott"
+#   puts "#{nick_names[:name8]}'s nickname is #{nick_names[:nickname8]}"
+# when "kenneth faried"
+#   puts "#{nick_names[:name9]}'s nickname is #{nick_names[:nickname9]}"
+# when "robin lopez"
+#   puts "#{nick_names[:name10]}'s nickname is #{nick_names[:nickname10]}"
+# else puts "Player not in database! Please try another player"
+# end
+#
+# end
+# array = [1,2,3,4]
+# i = 0
+# for i in array
+#   puts i
+#   i += 1
+# end
