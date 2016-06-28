@@ -1,3 +1,8 @@
+
+###Hey, it's Steve finishing the Homework assignment!
+
+
+
 # height = ARGV[0] #takes the users response and turns it to an array
 # output = "" #is an empty string we fill later
 # height.to_i.times do |i| #takes the height variable, turns it to an integer,
